@@ -1,8 +1,8 @@
-from django.db import IntegrityError
-from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAdminUser, IsAuthenticated
-from rest_framework.views import APIView
-from rest_framework_simplejwt.authentication import JWTAuthentication
+from django.db import IntegrityError # type: ignore
+from rest_framework.response import Response # type: ignore
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAdminUser, IsAuthenticated # type: ignore
+from rest_framework.views import APIView # type: ignore
+from rest_framework_simplejwt.authentication import JWTAuthentication # type: ignore
 
 from auth_jwt.serializers import *
 
@@ -11,7 +11,7 @@ from jwt_practice.settings import EMAIL_HOST_USER
 from auth_jwt.tasks import *
 
 #logout View
-from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.tokens import RefreshToken # type: ignore
 '''
 CRUD OPERATIONS RELATED TO USER_ROLE_LIST STARTS HERE
 '''
